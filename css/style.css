@@ -1,3 +1,11 @@
+/* === REMOVER TODO BACKGROUND DO INDEX=== */
+header,
+section,
+.container,
+.card {
+  background: transparent !important;
+}
+
 *{
 margin:0;
 padding:0;
@@ -198,32 +206,6 @@ transition:0.3s;
 
 .pricing-card button:hover{
 opacity:0.9;
-}
-
-/* FEEDBACK */
-.section{
-padding:100px 10%;
-text-align:center;
-}
-
-.section h2{
-font-size:32px;
-margin-bottom:30px;
-}
-
-.feedback-wrapper{
-display:flex;
-justify-content:center;
-gap:50px;
-flex-wrap:wrap;
-margin-top:60px;
-}
-
-.feedback-section{
-position:relative;
-width:300px;
-height:210px;
-overflow:hidden;
 }
 
 .testimonial-card{
@@ -581,28 +563,6 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
     transition: width 1s ease-in-out;
 }
 
-
-/* === FUNIL === */
-.aida-section{
-  padding:120px 10%;
-  background:#000000;
-  text-align:center;
-}
-
-.aida-title{
-  font-size:20px;
-  margin-bottom:20px;
-  color: #fff;;
-  font-weight:700;
-}
-
-.funil-container{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:25px;
-}
-
 /* BASE */
 .funil{
   display:flex;
@@ -616,43 +576,11 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
   letter-spacing:2px;
 }
 
-/* TAMANHOS */
-.etapa1{
-  width:520px;
-  height:60px;
-  background:linear-gradient(90deg,#020eab,#0440d8);
-}
-
-.etapa2{
-  width:420px;
-  height:55px;
-  background:linear-gradient(90deg,#570000,#041A53);
-}
-
-.etapa3{
-  width:320px;
-  height:50px;
-  background:linear-gradient(90deg,#570000,#041A53);
-}
-
-.etapa4{
-  width:220px;
-  height:40px;
-  background:linear-gradient(90deg,#570000,#041A53);
-}
-
 /* HOVER */
 .funil:hover{
   transform:scale(1.06);
 }
 
-/* RESPONSIVO */
-@media(max-width:768px){
-  .etapa1{width:100%;}
-  .etapa2{width:80%;}
-  .etapa3{width:60%;}
-  .etapa4{width:40%;}
-}
 /* === VIDEO === */
 .bg-video{
   position: fixed;
@@ -662,13 +590,6 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-/* === REMOVER TODO BACKGROUND DO INDEX=== */
-header,
-section,
-.container,
-.card {
-  background: transparent !important;
 }
 
 /* PARCEIROS */
