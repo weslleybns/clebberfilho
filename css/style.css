@@ -25,7 +25,7 @@ padding:20px 10%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-position:relative;
+position:fixed;
 width:100%;
 top:0;
 z-index:1000;
@@ -93,7 +93,7 @@ color:#ccc;
 
 .btn{
 padding:16px 35px;
-background:#041A53;
+background: linear-gradient(90deg, #0e0ea4, #0055ff);
 border:none;
 color:#fff;
 font-weight:700;
@@ -305,8 +305,8 @@ color:#ccc;
 footer{
 padding:40px;
 text-align:center;
-background:#d2d2d2;
-color:#000000;
+background:#000000;
+color:#9b9b9b;
 margin-top:60px;
 }
 
@@ -395,7 +395,7 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
 /* CARD */
 
 .insight-card{
-    background:#02184f;
+    background:#011f6a;
     border-radius:18px;
     overflow:hidden;
     transition:0.4s ease;
@@ -440,16 +440,16 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
 .insight-content a{
     display:inline-block;
     padding:8px 18px;
-    background:#ffffff;
+    background: linear-gradient(90deg, #1a1add, #0055ff);
     border-radius:8px;
     text-decoration:none;
     font-size:15px;
-    color:#020202;
+    color:#ffffff;
     transition:0.3s;
 }
 
 .insight-content a:hover{
-    background:#ffffff;
+    background: linear-gradient(90deg, #1a1add82, #0055ffab);
 }
 
 /* SEÇÃO */
@@ -459,20 +459,6 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* CONTAINER */
-.prova-social .container {
-  text-align: center;
-}
-
-/* TEXTO */
-.prova-social h2 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #f1f1f1;
-  margin-bottom: 40px;
-  line-height: 1.2;
 }
 
 /* LOGOS */
@@ -503,78 +489,6 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
   z-index: 2;
 }
 
-/* ====== XP DASHBOARD ====== */
-
-.xp-dashboard {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 120px 20px;
-}
-
-.xp-logo {
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.xp-logo h1 {
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.xp-logo span {
-    font-weight: 600;
-    color: #ccc;
-}
-
-.xp-metric {
-    margin-bottom: 60px;
-}
-
-.xp-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.xp-header h2 {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.xp-header span {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.xp-bar {
-    width: 100%;
-    height: 12px;
-    background: #666;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.xp-progress {
-    height: 100%;
-    background: linear-gradient(90deg, #041A53, #041A53);
-    border-radius: 10px;
-    transition: width 1s ease-in-out;
-}
-
-/* BASE */
-.funil{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-weight:700;
-  border-radius:100px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.2);
-  transition:0.4s;
-  letter-spacing:2px;
-}
 
 /* HOVER */
 .funil:hover{
@@ -669,4 +583,124 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
 
 .whatsapp-float:hover {
   transform: scale(1.1);
+}
+
+.vitrine {
+  padding: 50px;
+  background: #f2f3f7;
+}
+
+.vitrine-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.vitrine-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.vitrine-header a {
+  color: #ff6a00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.vitrine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.produto-card {
+  background: #f4f4f4;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.produto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.produto-card img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.produto-badges {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.desconto {
+  background: #090979;
+  color: white;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.avaliacao {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #ff9800;
+}
+
+.avaliacao span {
+  color: #666;
+  font-size: 13px;
+}
+
+.produto-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  min-height: 45px;
+  color: #000
+}
+
+.preco-antigo {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.preco {
+  font-size: 22px;
+  font-weight: 800;
+  color: #000;
+}
+
+.parcelamento {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.btn-comprar {
+  display: block;
+  text-align: center;
+  background: linear-gradient(90deg, #0e0ea4, #0055ff);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-comprar:hover {
+  opacity: 0.9;
 }
