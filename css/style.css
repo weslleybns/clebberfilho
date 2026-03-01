@@ -14,7 +14,8 @@ font-family:'Montserrat',sans-serif;
 }
 
 body{
-background:#000;
+background: #060663;
+background: linear-gradient(90deg, rgba(6, 6, 99, 1) 33%, rgba(0, 64, 255, 1) 100%);
 color:#fff;
 overflow-x:hidden;
 }
@@ -305,7 +306,7 @@ color:#ccc;
 footer{
 padding:40px;
 text-align:center;
-background:#000000;
+background:#000;
 color:#9b9b9b;
 margin-top:60px;
 }
